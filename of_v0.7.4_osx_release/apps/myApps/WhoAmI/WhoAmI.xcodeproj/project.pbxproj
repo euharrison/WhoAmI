@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84471AB7170BE0CD0078F305 /* characterBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84471AB5170BE0CD0078F305 /* characterBase.cpp */; };
 		84F7D80C170B967800889C50 /* monstro1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F7D80B170B967800889C50 /* monstro1.cpp */; };
-		84F7D814170B9BDB00889C50 /* characterBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F7D812170B9BDB00889C50 /* characterBase.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -62,10 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84471AB5170BE0CD0078F305 /* characterBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = characterBase.cpp; path = characters/characterBase.cpp; sourceTree = "<group>"; };
+		84471AB6170BE0CD0078F305 /* characterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = characterBase.h; path = characters/characterBase.h; sourceTree = "<group>"; };
 		84F7D80A170B966900889C50 /* monstro1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monstro1.h; path = characters/monstro1.h; sourceTree = "<group>"; };
 		84F7D80B170B967800889C50 /* monstro1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monstro1.cpp; path = characters/monstro1.cpp; sourceTree = "<group>"; };
-		84F7D812170B9BDB00889C50 /* characterBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = characterBase.cpp; sourceTree = "<group>"; };
-		84F7D813170B9BDB00889C50 /* characterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characterBase.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -123,10 +123,10 @@
 		84F7D809170B961700889C50 /* characters */ = {
 			isa = PBXGroup;
 			children = (
+				84471AB5170BE0CD0078F305 /* characterBase.cpp */,
+				84471AB6170BE0CD0078F305 /* characterBase.h */,
 				84F7D80B170B967800889C50 /* monstro1.cpp */,
 				84F7D80A170B966900889C50 /* monstro1.h */,
-				84F7D812170B9BDB00889C50 /* characterBase.cpp */,
-				84F7D813170B9BDB00889C50 /* characterBase.h */,
 			);
 			name = characters;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				84F7D80C170B967800889C50 /* monstro1.cpp in Sources */,
-				84F7D814170B9BDB00889C50 /* characterBase.cpp in Sources */,
+				84471AB7170BE0CD0078F305 /* characterBase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
