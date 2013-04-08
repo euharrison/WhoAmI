@@ -34,6 +34,7 @@ void characterBase::draw()
     ofTranslate(position);
     
     material.begin();
+    texture.getTexture().bind();
     
     ofSphere(head, 10);
     
@@ -51,6 +52,7 @@ void characterBase::draw()
     ofSphere(knee_right, 5);
     ofSphere(foot_right, 5);
     
+    texture.getTexture().unbind();
     material.end();
     
     ofPopMatrix();

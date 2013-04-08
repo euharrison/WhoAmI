@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "genTexture.h"
 
 class characterBase
 {
@@ -25,7 +26,7 @@ public:
     ofPoint knee_right;
     ofPoint foot_right;
     
-    
+    GenTexture texture;
     ofMaterial material;
     
     

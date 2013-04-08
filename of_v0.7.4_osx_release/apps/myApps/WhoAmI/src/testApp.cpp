@@ -15,6 +15,7 @@ void testApp::setup(){
     cameraPosition.set(ofGetWidth()/2, ofGetHeight()/2+40, 500);
     
     
+    ofEnableLighting();
     light.setDiffuseColor(ofColor(255,255,255));
     light.setSpecularColor(ofColor(255,255,255));
     light.setPosition(200, 200, 200);
@@ -30,7 +31,6 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    ofEnableLighting();
     
     ofPushMatrix();
     ofTranslate(cameraPosition.x, cameraPosition.y, cameraPosition.z);
@@ -40,7 +40,6 @@ void testApp::draw(){
     
     
     ofPopMatrix();
-    ofDisableLighting();
 }
 
 //--------------------------------------------------------------
