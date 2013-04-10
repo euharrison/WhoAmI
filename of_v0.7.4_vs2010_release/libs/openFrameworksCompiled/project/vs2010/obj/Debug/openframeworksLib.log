@@ -1,0 +1,135 @@
+﻿Build started 09/04/2013 20:45:11.
+     1>Project "C:\Users\Carlos\Documents\GitHub\WhoAmI\of_v0.7.4_vs2010_release\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "obj\Debug\openframeworksLib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\libs\openFrameworks /I..\..\..\..\libs\openFrameworks\graphics /I..\..\..\..\libs\openFrameworks\app /I..\..\..\..\libs\openFrameworks\sound /I..\..\..\..\libs\openFrameworks\utils /I..\..\..\..\libs\openFrameworks\communication /I..\..\..\..\libs\openFrameworks\video /I..\..\..\..\libs\openFrameworks\types /I..\..\..\..\libs\openFrameworks\math /I..\..\..\..\libs\openFrameworks\3d /I..\..\..\..\libs\openFrameworks\gl /I..\..\..\..\libs\openFrameworks\events /I..\..\..\..\libs\glut\include /I..\..\..\..\libs\rtAudio\include /I..\..\..\..\libs\quicktime\include /I..\..\..\..\libs\freetype\include /I..\..\..\..\libs\freetype\include\freetype2 /I..\..\..\..\libs\freeImage\include /I..\..\..\..\libs\fmodex\include /I..\..\..\..\libs\videoInput\include /I..\..\..\..\libs\glew\include\ /I..\..\..\..\libs\glu\include /I..\..\..\..\libs\tess2\include /I..\..\..\..\libs\cairo\include\cairo /I..\..\..\..\libs\poco\include /I..\..\..\addons /ZI /nologo /W1 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D POCO_STATIC /D CAIRO_WIN32_STATIC_BUILD /D DISABLE_SOME_FLOATING_POINT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Debug\\" /Fd"obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\openFrameworks\3d\of3dUtils.cpp ..\..\..\openFrameworks\3d\ofCamera.cpp ..\..\..\openFrameworks\3d\ofEasyCam.cpp ..\..\..\openFrameworks\3d\ofMesh.cpp ..\..\..\openFrameworks\3d\ofNode.cpp ..\..\..\openFrameworks\app\ofAppGlutWindow.cpp ..\..\..\openFrameworks\app\ofAppRunner.cpp ..\..\..\openFrameworks\events\ofEvents.cpp ..\..\..\openFrameworks\gl\ofFbo.cpp ..\..\..\openFrameworks\gl\ofGLRenderer.cpp ..\..\..\openFrameworks\gl\ofLight.cpp ..\..\..\openFrameworks\gl\ofMaterial.cpp ..\..\..\openFrameworks\gl\ofShader.cpp ..\..\..\openFrameworks\gl\ofTexture.cpp ..\..\..\openFrameworks\gl\ofVbo.cpp ..\..\..\openFrameworks\gl\ofVboMesh.cpp ..\..\..\openFrameworks\graphics\ofBitmapFont.cpp ..\..\..\openFrameworks\graphics\ofCairoRenderer.cpp ..\..\..\openFrameworks\graphics\ofGraphics.cpp ..\..\..\openFrameworks\graphics\ofImage.cpp ..\..\..\openFrameworks\graphics\ofPath.cpp ..\..\..\openFrameworks\graphics\ofPixels.cpp ..\..\..\openFrameworks\graphics\ofPolyline.cpp ..\..\..\openFrameworks\graphics\ofTessellator.cpp ..\..\..\openFrameworks\graphics\ofTrueTypeFont.cpp ..\..\..\openFrameworks\math\ofMath.cpp ..\..\..\openFrameworks\math\ofMatrix3x3.cpp ..\..\..\openFrameworks\math\ofMatrix4x4.cpp ..\..\..\openFrameworks\math\ofQuaternion.cpp ..\..\..\openFrameworks\math\ofVec2f.cpp ..\..\..\openFrameworks\math\ofVec4f.cpp ..\..\..\openFrameworks\sound\ofBaseSoundPlayer.cpp ..\..\..\openFrameworks\sound\ofBaseSoundStream.cpp ..\..\..\openFrameworks\sound\ofFmodSoundPlayer.cpp ..\..\..\openFrameworks\sound\ofRtAudioSoundStream.cpp ..\..\..\openFrameworks\sound\ofSoundPlayer.cpp ..\..\..\openFrameworks\sound\ofSoundStream.cpp ..\..\..\openFrameworks\types\ofBaseTypes.cpp ..\..\..\openFrameworks\types\ofColor.cpp ..\..\..\openFrameworks\types\ofPoint.cpp ..\..\..\openFrameworks\types\ofRectangle.cpp ..\..\..\openFrameworks\utils\ofFileUtils.cpp ..\..\..\openFrameworks\utils\ofLog.cpp ..\..\..\openFrameworks\utils\ofSystemUtils.cpp ..\..\..\openFrameworks\utils\ofThread.cpp ..\..\..\openFrameworks\utils\ofURLFileLoader.cpp ..\..\..\openFrameworks\utils\ofUtils.cpp ..\..\..\openFrameworks\video\ofDirectShowGrabber.cpp ..\..\..\openFrameworks\video\ofQtUtils.cpp ..\..\..\openFrameworks\video\ofQuickTimeGrabber.cpp ..\..\..\openFrameworks\video\ofQuickTimePlayer.cpp ..\..\..\openFrameworks\video\ofVideoGrabber.cpp ..\..\..\openFrameworks\video\ofVideoPlayer.cpp ..\..\..\openFrameworks\communication\ofArduino.cpp ..\..\..\openFrameworks\communication\ofSerial.cpp
+         ofSerial.cpp
+     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\communication\ofserial.cpp(551): warning C4305: 'return' : truncation from 'int' to 'bool'
+         ofArduino.cpp
+         ofVideoPlayer.cpp
+         ofVideoGrabber.cpp
+         ofQuickTimePlayer.cpp
+         ofQuickTimeGrabber.cpp
+         ofQtUtils.cpp
+         ofDirectShowGrabber.cpp
+         ofUtils.cpp
+         ofURLFileLoader.cpp
+         ofThread.cpp
+         ofSystemUtils.cpp
+         ofLog.cpp
+         ofFileUtils.cpp
+         ofRectangle.cpp
+         ofPoint.cpp
+         ofColor.cpp
+         ofBaseTypes.cpp
+         ofSoundStream.cpp
+         ofSoundPlayer.cpp
+         Generating Code...
+         Compiling...
+         ofRtAudioSoundStream.cpp
+         ofFmodSoundPlayer.cpp
+         ofBaseSoundStream.cpp
+         ofBaseSoundPlayer.cpp
+         ofVec4f.cpp
+         ofVec2f.cpp
+         ofQuaternion.cpp
+         ofMatrix4x4.cpp
+         ofMatrix3x3.cpp
+         ofMath.cpp
+         ofTrueTypeFont.cpp
+         ofTessellator.cpp
+         ofPolyline.cpp
+         ofPixels.cpp
+         ofPath.cpp
+         ofImage.cpp
+         ofGraphics.cpp
+         ofCairoRenderer.cpp
+         ofBitmapFont.cpp
+         ofVboMesh.cpp
+         Generating Code...
+         Compiling...
+         ofVbo.cpp
+         ofTexture.cpp
+         ofShader.cpp
+         ofMaterial.cpp
+         ofLight.cpp
+         ofGLRenderer.cpp
+         ofFbo.cpp
+         ofEvents.cpp
+         ofAppRunner.cpp
+         ofAppGlutWindow.cpp
+         ofNode.cpp
+         ofMesh.cpp
+         ofEasyCam.cpp
+         ofCamera.cpp
+         of3dUtils.cpp
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\lib\vs2010\openframeworksLibDebug.lib" /NOLOGO obj\Debug\of3dUtils.obj
+         obj\Debug\ofCamera.obj
+         obj\Debug\ofEasyCam.obj
+         obj\Debug\ofMesh.obj
+         obj\Debug\ofNode.obj
+         obj\Debug\ofAppGlutWindow.obj
+         obj\Debug\ofAppRunner.obj
+         obj\Debug\ofEvents.obj
+         obj\Debug\ofFbo.obj
+         obj\Debug\ofGLRenderer.obj
+         obj\Debug\ofLight.obj
+         obj\Debug\ofMaterial.obj
+         obj\Debug\ofShader.obj
+         obj\Debug\ofTexture.obj
+         obj\Debug\ofVbo.obj
+         obj\Debug\ofVboMesh.obj
+         obj\Debug\ofBitmapFont.obj
+         obj\Debug\ofCairoRenderer.obj
+         obj\Debug\ofGraphics.obj
+         obj\Debug\ofImage.obj
+         obj\Debug\ofPath.obj
+         obj\Debug\ofPixels.obj
+         obj\Debug\ofPolyline.obj
+         obj\Debug\ofTessellator.obj
+         obj\Debug\ofTrueTypeFont.obj
+         obj\Debug\ofMath.obj
+         obj\Debug\ofMatrix3x3.obj
+         obj\Debug\ofMatrix4x4.obj
+         obj\Debug\ofQuaternion.obj
+         obj\Debug\ofVec2f.obj
+         obj\Debug\ofVec4f.obj
+         obj\Debug\ofBaseSoundPlayer.obj
+         obj\Debug\ofBaseSoundStream.obj
+         obj\Debug\ofFmodSoundPlayer.obj
+         obj\Debug\ofRtAudioSoundStream.obj
+         obj\Debug\ofSoundPlayer.obj
+         obj\Debug\ofSoundStream.obj
+         obj\Debug\ofBaseTypes.obj
+         obj\Debug\ofColor.obj
+         obj\Debug\ofPoint.obj
+         obj\Debug\ofRectangle.obj
+         obj\Debug\ofFileUtils.obj
+         obj\Debug\ofLog.obj
+         obj\Debug\ofSystemUtils.obj
+         obj\Debug\ofThread.obj
+         obj\Debug\ofURLFileLoader.obj
+         obj\Debug\ofUtils.obj
+         obj\Debug\ofDirectShowGrabber.obj
+         obj\Debug\ofQtUtils.obj
+         obj\Debug\ofQuickTimeGrabber.obj
+         obj\Debug\ofQuickTimePlayer.obj
+         obj\Debug\ofVideoGrabber.obj
+         obj\Debug\ofVideoPlayer.obj
+         obj\Debug\ofArduino.obj
+         obj\Debug\ofSerial.obj
+     1>ofPoint.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>ofBaseSoundStream.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>ofBaseSoundPlayer.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         openframeworksLib.vcxproj -> C:\Users\Carlos\Documents\GitHub\WhoAmI\of_v0.7.4_vs2010_release\libs\openFrameworksCompiled\project\vs2010\..\..\lib\vs2010\openframeworksLibDebug.lib
+       FinalizeBuildStatus:
+         Deleting file "obj\Debug\openframeworksLib.unsuccessfulbuild".
+         Touching "obj\Debug\openframeworksLib.lastbuildstate".
+     1>Done Building Project "C:\Users\Carlos\Documents\GitHub\WhoAmI\of_v0.7.4_vs2010_release\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:02:54.71
