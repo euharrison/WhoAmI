@@ -1,14 +1,30 @@
 #include "characterBase.h"
 
-characterBase::characterBase()
+
+void characterBase::update()
 {
-    //positions
+    ofPoint headPosition;
     
-    head.set(0, -80);
+    ofPoint shoulder_left;
+    ofPoint elbow_left;
+    ofPoint hand_leftPosition;
+    ofPoint leg_left;
+    ofPoint knee_left;
+    ofPoint foot_left;
+    
+    ofPoint shoulder_right;
+    ofPoint elbow_right;
+    ofPoint hand_right;
+    ofPoint leg_right;
+    ofPoint knee_right;
+    ofPoint foot_right;
+    
+    
+    headPosition.set(0, -80);
     
     shoulder_left.set(-10, -65);
     elbow_left.set(-20, -50);
-    hand_left.set(-20, -30);
+    hand_leftPosition.set(-20, -30);
     leg_left.set(-5, -40);
     knee_left.set(-10, -20);
     foot_left.set(-10, 0);
@@ -21,37 +37,24 @@ characterBase::characterBase()
     foot_right.set(10, 0);
     
     
-    //material
+    shapes[HEAD]->position = headPosition;
     
-    material.setEmissiveColor(ofColor(255,0,0));
-    material.setSpecularColor(ofColor(255,0,0));
-    material.setShininess(60);
+    shapes[ARM_LEFT]->position = shoulder_left + ((elbow_left-shoulder_left)/2.f);
+    shapes[FOREARM_LEFT]->position = elbow_left + ((hand_leftPosition-elbow_left)/2.f);
+    shapes[HAND_LEFT]->position = hand_leftPosition;
 }
 
 void characterBase::draw()
 {
     ofPushMatrix();
     ofTranslate(position);
-    
-    material.begin();
-    
-    ofSphere(head, 10);
-    
-    ofSphere(shoulder_left, 5);
-    ofSphere(elbow_left, 5);
-    ofSphere(hand_left, 5);
-    ofSphere(leg_left, 5);
-    ofSphere(knee_left, 5);
-    ofSphere(foot_left, 5);
-    
-    ofSphere(shoulder_right, 5);
-    ofSphere(elbow_right, 5);
-    ofSphere(hand_right, 5);
-    ofSphere(leg_right, 5);
-    ofSphere(knee_right, 5);
-    ofSphere(foot_right, 5);
-    
-    material.end();
+ 
+    for (int i = 0; i < 4; i++) {
+        shapes[i]->draw();
+    }
     
     ofPopMatrix();
 }
+
+
+

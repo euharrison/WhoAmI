@@ -2,33 +2,23 @@
 
 monstro1::monstro1()
 {
+    shapes[HEAD] = new block();
+    shapes[HEAD]->updateMesh(10, 10, 10);
     
+    shapes[ARM_LEFT] = new block();
+    shapes[ARM_LEFT]->updateMesh(5, 10, 1);
+    
+    shapes[FOREARM_LEFT] = new block();
+    shapes[FOREARM_LEFT]->updateMesh(5, 10, 1);
+    
+    shapes[HAND_LEFT] = new block();
+    shapes[HAND_LEFT]->updateMesh(5, 10, 1);
 }
 
-void monstro1::draw()
+void monstro1::update()
 {
-    ofPushMatrix();
-    ofTranslate(position);
+    characterBase::update();
     
-    material.begin();
+    shapes[ARM_LEFT]->rotation.y += 2;
     
-    ofSphere(head, 10);
-    
-    ofSphere(shoulder_left, 5);
-    ofSphere(elbow_left, 5);
-    ofSphere(hand_left, 5);
-    ofSphere(leg_left, 5);
-    ofSphere(knee_left, 5);
-    ofSphere(foot_left, 5);
-    
-    ofSphere(shoulder_right, 5);
-    ofSphere(elbow_right, 5);
-    ofSphere(hand_right, 5);
-    ofSphere(leg_right, 5);
-    ofSphere(knee_right, 5);
-    ofSphere(foot_right, 5);
-    
-    material.end();
-    
-    ofPopMatrix();
 }

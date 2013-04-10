@@ -1,7 +1,8 @@
 #include "testApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup(){
+void testApp::setup()
+{
     
     ofSetVerticalSync(true);
 	ofSetFrameRate(60);
@@ -23,8 +24,9 @@ void testApp::setup(){
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
-
+void testApp::update()
+{
+    m1.update();
 }
 
 //--------------------------------------------------------------
