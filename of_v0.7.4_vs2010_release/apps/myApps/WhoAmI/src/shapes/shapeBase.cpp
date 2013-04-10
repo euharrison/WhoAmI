@@ -1,17 +1,5 @@
 #include "shapeBase.h"
 
-
-void shapeBase::updateMesh(float width, float height, float depth)
-{
-
-}
-	
-void shapeBase::draw() 
-{
-
-}
-
-
 void shapeBase::beginDraw()
 {
     ofPushMatrix();

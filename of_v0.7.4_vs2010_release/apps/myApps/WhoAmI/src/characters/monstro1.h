@@ -1,5 +1,6 @@
 #pragma once
 
+#include "ofxKinectNui.h"
 #include "ofMain.h"
 #include "characterBase.h"
 #include "block.h"

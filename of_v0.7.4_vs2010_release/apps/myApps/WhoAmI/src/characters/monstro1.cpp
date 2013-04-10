@@ -2,17 +2,10 @@
 
 monstro1::monstro1()
 {
-    shapes[HEAD] = new block();
-    shapes[HEAD]->updateMesh(10, 10, 10);
-    
-    shapes[ARM_LEFT] = new block();
-    shapes[ARM_LEFT]->updateMesh(5, 10, 1);
-    
-    shapes[FOREARM_LEFT] = new block();
-    shapes[FOREARM_LEFT]->updateMesh(5, 10, 1);
-    
-    shapes[HAND_LEFT] = new block();
-    shapes[HAND_LEFT]->updateMesh(5, 10, 1);
+	for(int j = 0; j < kinect::nui::SkeletonData::POSITION_COUNT; ++j){
+		shapes[j] = new block();
+		shapes[j]->updateMesh(20, 20, 20);
+	}
 }
 
 void monstro1::update()

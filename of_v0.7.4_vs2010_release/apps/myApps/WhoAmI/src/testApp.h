@@ -45,6 +45,5 @@ class testApp : public ofBaseApp{
 	int angle;
 	
 	//integration kinect
-	vector<ofPoint *> bone;
 	int currentSkeletonIndex;
 };

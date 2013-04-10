@@ -10,8 +10,8 @@ public:
     ofPoint position;
     ofPoint rotation;
     
-	void updateMesh(float width, float height, float depth);
-	void draw();
+	virtual void updateMesh(float width, float height, float depth) {};
+	virtual void draw() {};
     
     
 protected:

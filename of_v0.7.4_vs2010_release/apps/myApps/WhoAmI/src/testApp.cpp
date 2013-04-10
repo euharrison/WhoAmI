@@ -42,11 +42,6 @@ void testApp::setup(){
 	nearClipping = kinect.getNearClippingDistance();
 	farClipping = kinect.getFarClippingDistance();
 	currentSkeletonIndex = -1;
-
-	for(int j = 0; j < kinect::nui::SkeletonData::POSITION_COUNT; ++j){
-		ofPoint * joint = new ofPoint(9999, 9999, 9999);
-		bone.push_back(joint);
-	}
 #endif	
     
 }
@@ -65,7 +60,7 @@ void testApp::update(){
 				currentSkeletonIndex = i;
 				m1.shapes[j]->position.x = ofMap(kinect.skeletonPoints[i][j].x, 0, 310, 0, ofGetWidth());
 				m1.shapes[j]->position.y = kinect.skeletonPoints[i][j].y * 3;
-				m1.shapes[j]->position.z = ofMap(kinect.skeletonPoints[i][j].z, 0, 40000, 0, 2000);
+				m1.shapes[j]->position.z = ofMap(kinect.skeletonPoints[i][j].z, 0, 40000, 0, -2000);
 			}
 		}
 	}
