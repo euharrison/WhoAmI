@@ -1,7 +1,10 @@
 #pragma once
 
+#include "ofxKinectNui.h"
 #include "ofMain.h"
 #include "monstro1.h"
+
+#define USE_KINECT
 
 class testApp : public ofBaseApp{
 
@@ -25,6 +28,23 @@ class testApp : public ofBaseApp{
     ofVec3f cameraPosition;
     
     monstro1 m1;
+	
 
+	//Kinect
+	void kinectPlugged();
+	void kinectUnplugged();
+		
+	ofxKinectNui kinect;
+	ofxBase3DVideo* kinectSource;
 
+	bool bPlugged;
+	bool bUnplugged;
+		
+	unsigned short nearClipping;
+	unsigned short farClipping;
+	int angle;
+	
+	//integration kinect
+	vector<ofPoint *> bone;
+	int currentSkeletonIndex;
 };

@@ -1,5 +1,6 @@
+
+#include "testApp.h" // Needs to be in front of ofMain.h
 #include "ofMain.h"
-#include "testApp.h"
 #include "ofAppGlutWindow.h"
 
 //========================================================================

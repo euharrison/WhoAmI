@@ -1,36 +1,20 @@
-﻿Build started 09/04/2013 21:00:28.
+﻿Build started 09/04/2013 22:21:41.
      1>Project "C:\Users\Carlos\Documents\GitHub\WhoAmI\of_v0.7.4_vs2010_release\apps\myApps\WhoAmI\kinectNuiExample.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "obj\Debug\kinectNuiExample.unsuccessfulbuild".
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\libs\openFrameworks /I..\..\..\libs\openFrameworks\graphics /I..\..\..\libs\openFrameworks\app /I..\..\..\libs\openFrameworks\sound /I..\..\..\libs\openFrameworks\utils /I..\..\..\libs\openFrameworks\communication /I..\..\..\libs\openFrameworks\video /I..\..\..\libs\openFrameworks\math /I..\..\..\libs\openFrameworks\types /I..\..\..\libs\openFrameworks\events /I..\..\..\libs\glut\include /I..\..\..\libs\rtAudio\include /I..\..\..\libs\quicktime\include /I..\..\..\libs\freetype\include /I..\..\..\libs\freetype\include\freetype2 /I..\..\..\libs\freeImage\include /I..\..\..\libs\fmodex\include /I..\..\..\libs\videoInput\include /I..\..\..\libs\glew\include\ /I..\..\..\libs\glu\include /I..\..\..\libs\poco\include /I..\..\..\addons /I..\..\..\libs\openFrameworks\gl /I..\..\..\libs\openFrameworks\3d /I..\..\..\libs\tess2\include /I..\..\..\libs\cairo\include\cairo /I"C:\Program Files\Microsoft SDKs\Kinect\v1.6\\inc" /I..\..\..\addons\ofxKinectNui\src /Isrc\characters /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D POCO_STATIC /D CAIRO_WIN32_STATIC_BUILD /D DISABLE_SOME_FLOATING_POINT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Debug\\" /Fd"obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\addons\ofxKinectNui\src\kinect\nui\AudioStream.cpp ..\..\..\addons\ofxKinectNui\src\kinect\nui\ImageFrame.cpp ..\..\..\addons\ofxKinectNui\src\kinect\nui\ImageStream.cpp ..\..\..\addons\ofxKinectNui\src\kinect\nui\Kinect.cpp ..\..\..\addons\ofxKinectNui\src\kinect\nui\KinectContext.cpp ..\..\..\addons\ofxKinectNui\src\kinect\nui\SkeletonEngine.cpp ..\..\..\addons\ofxKinectNui\src\kinect\nui\SkeletonFrame.cpp ..\..\..\addons\ofxKinectNui\src\ofxKinectNui.cpp ..\..\..\addons\ofxKinectNui\src\ofxKinectNuiDraw.cpp ..\..\..\addons\ofxKinectNui\src\ofxKinectNuiPlayer.cpp ..\..\..\addons\ofxKinectNui\src\ofxKinectNuiRecorder.cpp ..\..\..\addons\ofxKinectNui\src\ofxKinectNuiSoundRecorder.cpp ..\..\..\addons\ofxKinectNui\src\win32\Event.cpp src\characters\characterBase.cpp src\characters\monstro1.cpp src\main.cpp src\testApp.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\libs\openFrameworks /I..\..\..\libs\openFrameworks\graphics /I..\..\..\libs\openFrameworks\app /I..\..\..\libs\openFrameworks\sound /I..\..\..\libs\openFrameworks\utils /I..\..\..\libs\openFrameworks\communication /I..\..\..\libs\openFrameworks\video /I..\..\..\libs\openFrameworks\math /I..\..\..\libs\openFrameworks\types /I..\..\..\libs\openFrameworks\events /I..\..\..\libs\glut\include /I..\..\..\libs\rtAudio\include /I..\..\..\libs\quicktime\include /I..\..\..\libs\freetype\include /I..\..\..\libs\freetype\include\freetype2 /I..\..\..\libs\freeImage\include /I..\..\..\libs\fmodex\include /I..\..\..\libs\videoInput\include /I..\..\..\libs\glew\include\ /I..\..\..\libs\glu\include /I..\..\..\libs\poco\include /I..\..\..\addons /I..\..\..\libs\openFrameworks\gl /I..\..\..\libs\openFrameworks\3d /I..\..\..\libs\tess2\include /I..\..\..\libs\cairo\include\cairo /I"C:\Program Files\Microsoft SDKs\Kinect\v1.6\\inc" /I..\..\..\addons\ofxKinectNui\src /Isrc\characters /Isrc\shapes /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D POCO_STATIC /D CAIRO_WIN32_STATIC_BUILD /D DISABLE_SOME_FLOATING_POINT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Debug\\" /Fd"obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\characters\characterBase.cpp src\characters\monstro1.cpp src\main.cpp src\shapes\shapeBase.cpp src\testApp.cpp
          testApp.cpp
+     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
+     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
+         shapeBase.cpp
          main.cpp
-         monstro1.cpp
+     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
+     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
          characterBase.cpp
-         Event.cpp
-         ofxKinectNuiSoundRecorder.cpp
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
-         ofxKinectNuiRecorder.cpp
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
-         ofxKinectNuiPlayer.cpp
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
-         ofxKinectNuiDraw.cpp
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
-         ofxKinectNui.cpp
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(155): warning C4003: not enough actual parameters for macro 'max'
-     1>c:\users\carlos\documents\github\whoami\of_v0.7.4_vs2010_release\libs\openframeworks\graphics\ofpixels.h(156): warning C4003: not enough actual parameters for macro 'max'
-         SkeletonFrame.cpp
-         SkeletonEngine.cpp
-         KinectContext.cpp
-         Kinect.cpp
-         ImageStream.cpp
-         ImageFrame.cpp
-         AudioStream.cpp
+         Generating Code...
+         Compiling...
+         monstro1.cpp
          Generating Code...
        ManifestResourceCompile:
          All outputs are up-to-date.
@@ -52,6 +36,8 @@
          obj\Debug\characterBase.obj
          obj\Debug\monstro1.obj
          obj\Debug\main.obj
+         obj\Debug\block.obj
+         obj\Debug\shapeBase.obj
          obj\Debug\testApp.obj
          C:\Users\Carlos\Documents\GitHub\WhoAmI\of_v0.7.4_vs2010_release\libs\openFrameworksCompiled\lib\vs2010\openframeworksLibDebug.lib
             Creating library bin\kinectNuiExample_debug.lib and object bin\kinectNuiExample_debug.exp
@@ -177,4 +163,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:01:16.70
+Time Elapsed 00:00:39.42

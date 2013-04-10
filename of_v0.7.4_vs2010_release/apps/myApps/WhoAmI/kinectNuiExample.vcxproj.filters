@@ -48,6 +48,12 @@
     <ClCompile Include="src\characters\monstro1.cpp">
       <Filter>characters</Filter>
     </ClCompile>
+    <ClCompile Include="src\shapes\block.cpp">
+      <Filter>shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shapes\shapeBase.cpp">
+      <Filter>shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -117,6 +123,12 @@
     <ClInclude Include="src\characters\monstro1.h">
       <Filter>characters</Filter>
     </ClInclude>
+    <ClInclude Include="src\shapes\block.h">
+      <Filter>shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shapes\shapeBase.h">
+      <Filter>shapes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="addons">
@@ -127,6 +139,9 @@
     </Filter>
     <Filter Include="characters">
       <UniqueIdentifier>{9d1e9f7d-8f93-489b-934e-7dae01063f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shapes">
+      <UniqueIdentifier>{2eee4f1f-bd65-444c-95ae-de7420bd9dce}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
