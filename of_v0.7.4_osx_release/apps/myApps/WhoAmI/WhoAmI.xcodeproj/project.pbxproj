@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84471AB7170BE0CD0078F305 /* characterBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84471AB5170BE0CD0078F305 /* characterBase.cpp */; };
-		84A579BD1714D7A300ABBB40 /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A579B91714D7A300ABBB40 /* block.cpp */; };
-		84A579BE1714D7A300ABBB40 /* shapeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A579BB1714D7A300ABBB40 /* shapeBase.cpp */; };
-		84F7D80C170B967800889C50 /* monstro1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F7D80B170B967800889C50 /* monstro1.cpp */; };
+		8483032E17153854004D47FF /* characterBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483032217153854004D47FF /* characterBase.cpp */; };
+		8483032F17153854004D47FF /* monstro1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483032417153854004D47FF /* monstro1.cpp */; };
+		8483033017153854004D47FF /* block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483032717153854004D47FF /* block.cpp */; };
+		8483033117153854004D47FF /* shapeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483032917153854004D47FF /* shapeBase.cpp */; };
+		8483033217153854004D47FF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483032B17153854004D47FF /* main.cpp */; };
+		8483033317153854004D47FF /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483032C17153854004D47FF /* testApp.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -22,8 +24,6 @@
 		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
 		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
 		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
-		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
-		E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */; };
 		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
@@ -64,14 +64,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84471AB5170BE0CD0078F305 /* characterBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = characterBase.cpp; path = characters/characterBase.cpp; sourceTree = "<group>"; };
-		84471AB6170BE0CD0078F305 /* characterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = characterBase.h; path = characters/characterBase.h; sourceTree = "<group>"; };
-		84A579B91714D7A300ABBB40 /* block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block.cpp; sourceTree = "<group>"; };
-		84A579BA1714D7A300ABBB40 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
-		84A579BB1714D7A300ABBB40 /* shapeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shapeBase.cpp; sourceTree = "<group>"; };
-		84A579BC1714D7A300ABBB40 /* shapeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shapeBase.h; sourceTree = "<group>"; };
-		84F7D80A170B966900889C50 /* monstro1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monstro1.h; path = characters/monstro1.h; sourceTree = "<group>"; };
-		84F7D80B170B967800889C50 /* monstro1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monstro1.cpp; path = characters/monstro1.cpp; sourceTree = "<group>"; };
+		8483032217153854004D47FF /* characterBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = characterBase.cpp; sourceTree = "<group>"; };
+		8483032317153854004D47FF /* characterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characterBase.h; sourceTree = "<group>"; };
+		8483032417153854004D47FF /* monstro1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = monstro1.cpp; sourceTree = "<group>"; };
+		8483032517153854004D47FF /* monstro1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monstro1.h; sourceTree = "<group>"; };
+		8483032717153854004D47FF /* block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block.cpp; sourceTree = "<group>"; };
+		8483032817153854004D47FF /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		8483032917153854004D47FF /* shapeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shapeBase.cpp; sourceTree = "<group>"; };
+		8483032A17153854004D47FF /* shapeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shapeBase.h; sourceTree = "<group>"; };
+		8483032B17153854004D47FF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8483032C17153854004D47FF /* testApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testApp.cpp; sourceTree = "<group>"; };
+		8483032D17153854004D47FF /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testApp.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -84,9 +87,6 @@
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		E4B69B5B0A3A1756003C02F2 /* WhoAmIDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoAmIDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -126,26 +126,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84A579B81714D7A300ABBB40 /* shapes */ = {
+		8483032117153854004D47FF /* characters */ = {
 			isa = PBXGroup;
 			children = (
-				84A579B91714D7A300ABBB40 /* block.cpp */,
-				84A579BA1714D7A300ABBB40 /* block.h */,
-				84A579BB1714D7A300ABBB40 /* shapeBase.cpp */,
-				84A579BC1714D7A300ABBB40 /* shapeBase.h */,
+				8483032217153854004D47FF /* characterBase.cpp */,
+				8483032317153854004D47FF /* characterBase.h */,
+				8483032417153854004D47FF /* monstro1.cpp */,
+				8483032517153854004D47FF /* monstro1.h */,
 			);
-			path = shapes;
+			path = characters;
 			sourceTree = "<group>";
 		};
-		84F7D809170B961700889C50 /* characters */ = {
+		8483032617153854004D47FF /* shapes */ = {
 			isa = PBXGroup;
 			children = (
-				84471AB5170BE0CD0078F305 /* characterBase.cpp */,
-				84471AB6170BE0CD0078F305 /* characterBase.h */,
-				84F7D80B170B967800889C50 /* monstro1.cpp */,
-				84F7D80A170B966900889C50 /* monstro1.h */,
+				8483032717153854004D47FF /* block.cpp */,
+				8483032817153854004D47FF /* block.h */,
+				8483032917153854004D47FF /* shapeBase.cpp */,
+				8483032A17153854004D47FF /* shapeBase.h */,
 			);
-			name = characters;
+			path = shapes;
 			sourceTree = "<group>";
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
@@ -218,11 +218,11 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				84A579B81714D7A300ABBB40 /* shapes */,
-				84F7D809170B961700889C50 /* characters */,
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				8483032117153854004D47FF /* characters */,
+				8483032617153854004D47FF /* shapes */,
+				8483032B17153854004D47FF /* main.cpp */,
+				8483032C17153854004D47FF /* testApp.cpp */,
+				8483032D17153854004D47FF /* testApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -320,12 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
-				84F7D80C170B967800889C50 /* monstro1.cpp in Sources */,
-				84471AB7170BE0CD0078F305 /* characterBase.cpp in Sources */,
-				84A579BD1714D7A300ABBB40 /* block.cpp in Sources */,
-				84A579BE1714D7A300ABBB40 /* shapeBase.cpp in Sources */,
+				8483032E17153854004D47FF /* characterBase.cpp in Sources */,
+				8483032F17153854004D47FF /* monstro1.cpp in Sources */,
+				8483033017153854004D47FF /* block.cpp in Sources */,
+				8483033117153854004D47FF /* shapeBase.cpp in Sources */,
+				8483033217153854004D47FF /* main.cpp in Sources */,
+				8483033317153854004D47FF /* testApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +366,7 @@
 					"-lpthread",
 					"-mtune=native",
 				);
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -397,7 +397,7 @@
 					"-lpthread",
 					"-mtune=native",
 				);
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -483,8 +483,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = WhoAmIDebug;
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -570,8 +569,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = WhoAmI;
-				SDKROOT = macosx10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

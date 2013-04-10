@@ -1,16 +1,16 @@
 dependencies: \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp \
   ../../../../libs/openFrameworks/video/ofVideoGrabber.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofConstants.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofConstants.h \
   ../../../../libs/glew/include/GL/glew.h \
   ../../../../libs/tess2/include/tesselator.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofTexture.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofPoint.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofVec3f.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofTexture.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofPoint.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofRectangle.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofLog.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofRectangle.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofLog.h \
   ../../../../libs/openFrameworks/utils/ofFileUtils.h \
   ../../../../libs/poco/include/Poco/File.h \
   ../../../../libs/poco/include/Poco/Foundation.h \
@@ -21,24 +21,24 @@ dependencies: \
   ../../../../libs/poco/include/Poco/Types.h \
   ../../../../libs/poco/include/Poco/Timestamp.h \
   ../../../../libs/poco/include/Poco/File_UNIX.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofTypes.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMath.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMath.h \
   ../../../../libs/poco/include/Poco/Mutex.h \
   ../../../../libs/poco/include/Poco/Exception.h \
   ../../../../libs/poco/include/Poco/ScopedLock.h \
   ../../../../libs/poco/include/Poco/Mutex_POSIX.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofBaseTypes.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofMesh.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofGLUtils.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofPixels.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMatrix4x4.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofBaseTypes.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofMesh.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofGLUtils.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofPixels.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMatrix4x4.h \
   ../../../../libs/openFrameworks/math/ofQuaternion.h \
   ../../../../libs/openFrameworks/video/ofQTKitGrabber.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/ofMain.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofSystemUtils.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofThread.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/ofMain.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofSystemUtils.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofThread.h \
   ../../../../libs/poco/include/Poco/Thread.h \
   ../../../../libs/poco/include/Poco/Thread_POSIX.h \
   ../../../../libs/poco/include/Poco/Runnable.h \
@@ -48,8 +48,8 @@ dependencies: \
   ../../../../libs/poco/include/Poco/RefCountedObject.h \
   ../../../../libs/poco/include/Poco/AtomicCounter.h \
   ../../../../libs/poco/include/Poco/AutoPtr.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofURLFileLoader.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/events/ofEvents.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofURLFileLoader.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/events/ofEvents.h \
   ../../../../libs/openFrameworks/events/ofEventUtils.h \
   ../../../../libs/poco/include/Poco/FIFOEvent.h \
   ../../../../libs/poco/include/Poco/AbstractEvent.h \
@@ -69,22 +69,22 @@ dependencies: \
   ../../../../libs/poco/include/Poco/Expire.h \
   ../../../../libs/poco/include/Poco/Condition.h \
   ../../../../libs/poco/include/Poco/ScopedUnlock.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofVectorMath.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofVectorMath.h \
   ../../../../libs/openFrameworks/math/ofMatrix3x3.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofFbo.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofGLRenderer.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofPolyline.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofLight.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofNode.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofFbo.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofGLRenderer.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofPolyline.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofLight.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofNode.h \
   ../../../../libs/openFrameworks/3d/of3dUtils.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofMaterial.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofShader.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofVbo.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofVboMesh.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofCairoRenderer.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofMaterial.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofShader.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofVbo.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofVboMesh.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofCairoRenderer.h \
   ../../../../libs/cairo/include/cairo/cairo-features.h \
   ../../../../libs/cairo/include/cairo/cairo-pdf.h \
   ../../../../libs/cairo/include/cairo/cairo.h \
@@ -93,15 +93,15 @@ dependencies: \
   ../../../../libs/cairo/include/cairo/cairo-svg.h \
   ../../../../libs/openFrameworks/graphics/ofPath.h \
   ../../../../libs/openFrameworks/graphics/ofTessellator.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofRendererCollection.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofBaseApp.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofRendererCollection.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofBaseApp.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.h \
   ../../../../libs/openFrameworks/sound/ofBaseSoundStream.h \
   ../../../../libs/openFrameworks/sound/ofRtAudioSoundStream.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.h \
   ../../../../libs/openFrameworks/sound/ofBaseSoundPlayer.h \
   ../../../../libs/openFrameworks/sound/ofFmodSoundPlayer.h \
   ../../../../libs/fmodex/include/fmod.h \
@@ -109,7 +109,7 @@ dependencies: \
   ../../../../libs/fmodex/include/fmod_dsp.h \
   ../../../../libs/fmodex/include/fmod_memoryinfo.h \
   ../../../../libs/fmodex/include/fmod_errors.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.h \
   ../../../../libs/openFrameworks/video/ofQTKitPlayer.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofCamera.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofEasyCam.h
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofCamera.h \
+  /Users/Harrison/Dropbox/WhoAmI/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofEasyCam.h
