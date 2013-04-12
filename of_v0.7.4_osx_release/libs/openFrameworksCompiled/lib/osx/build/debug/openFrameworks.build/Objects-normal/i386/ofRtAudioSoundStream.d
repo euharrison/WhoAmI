@@ -1,15 +1,15 @@
 dependencies: \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofRtAudioSoundStream.cpp \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofRtAudioSoundStream.cpp \
   ../../../../libs/openFrameworks/sound/ofRtAudioSoundStream.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofConstants.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofConstants.h \
   ../../../../libs/glew/include/GL/glew.h \
   ../../../../libs/tess2/include/tesselator.h \
   ../../../../libs/openFrameworks/sound/ofBaseSoundStream.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofTypes.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMath.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofPoint.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofVec3f.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMath.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofPoint.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
   ../../../../libs/poco/include/Poco/Mutex.h \
@@ -23,21 +23,21 @@ dependencies: \
   ../../../../libs/poco/include/Poco/ScopedLock.h \
   ../../../../libs/poco/include/Poco/Mutex_POSIX.h \
   ../../../../libs/openFrameworks/sound/ofSoundStream.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofBaseTypes.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/types/ofBaseTypes.h \
   ../../../../libs/openFrameworks/types/ofRectangle.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofLog.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofLog.h \
   ../../../../libs/openFrameworks/utils/ofFileUtils.h \
   ../../../../libs/poco/include/Poco/File.h \
   ../../../../libs/poco/include/Poco/Timestamp.h \
   ../../../../libs/poco/include/Poco/File_UNIX.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofMesh.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofGLUtils.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofPixels.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMatrix4x4.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/3d/ofMesh.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/gl/ofGLUtils.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofPixels.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/math/ofMatrix4x4.h \
   ../../../../libs/openFrameworks/math/ofQuaternion.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofBaseApp.h \
-  /Users/Harrison/Dropbox/[Labs]\ OpenGL/opengl/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/events/ofEvents.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofBaseApp.h \
+  /Users/tiagorezende/libs/cpp/of_v0.7.4_osx_release/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/events/ofEvents.h \
   ../../../../libs/openFrameworks/events/ofEventUtils.h \
   ../../../../libs/poco/include/Poco/FIFOEvent.h \
   ../../../../libs/poco/include/Poco/AbstractEvent.h \

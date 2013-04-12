@@ -22,6 +22,7 @@ public:
 
 class GenTexture {
     ofFbo fbo;
+    ofCamera camera;
     typedef std::vector<GenTextureShader*> ShaderSeq;
     ShaderSeq sequence;
 public:
@@ -29,6 +30,7 @@ public:
     ~GenTexture();
     void applySequence();
     ofTexture& getTexture();
+    void addShader(GenTextureShader * shader);
 };
 
 

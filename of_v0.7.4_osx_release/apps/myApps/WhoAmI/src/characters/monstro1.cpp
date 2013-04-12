@@ -2,15 +2,21 @@
 
 monstro1::monstro1()
 {
+    GenTextureFragShader *fs = new GenTextureFragShader("triforce.frag");
+    fs->setup();
+    texture.addShader(fs);
     
 }
 
 void monstro1::draw()
 {
+    texture.applySequence();
+    ofTexture &tex = texture.getTexture();
     ofPushMatrix();
     ofTranslate(position);
     
     material.begin();
+    tex.bind();
     
     ofSphere(head, 10);
     
@@ -28,6 +34,7 @@ void monstro1::draw()
     ofSphere(knee_right, 5);
     ofSphere(foot_right, 5);
     
+    tex.unbind();
     material.end();
     
     ofPopMatrix();

@@ -10,6 +10,6 @@ public:
     
     monstro1();
     
-    void draw();
+    virtual void draw();
     
 };

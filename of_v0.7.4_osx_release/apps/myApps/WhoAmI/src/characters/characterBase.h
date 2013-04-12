@@ -32,6 +32,6 @@ public:
     
     characterBase();
     
-    void draw();
+    virtual void draw();
     
 };

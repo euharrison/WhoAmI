@@ -1,0 +1,4 @@
+
+
+---------------------------------------  2013-04-11-22-02-00-765
+OF: error: OpenGL generated error 1282 trying to get the program link status. Does your video card support shader programs?

@@ -20,7 +20,6 @@ characterBase::characterBase()
     knee_right.set(10, -20);
     foot_right.set(10, 0);
     
-    
     //material
     
     material.setEmissiveColor(ofColor(255,0,0));

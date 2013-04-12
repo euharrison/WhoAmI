@@ -11,20 +11,28 @@
 
 GenTexture::GenTexture() {
     fbo.allocate(512, 512, GL_RGBA);
+    //camera.enableOrtho();
+    camera.setAspectRatio(1);
 }
 
 
 void GenTexture::applySequence() {
     // faz setup do FBO para renderização e chama um por um dos "shaders"
     fbo.begin();
+    camera.begin();
     for (ShaderSeq::const_iterator i = sequence.begin();
          i!=sequence.end(); i++) {
         (*i)->apply();
     }
+    camera.end();
     fbo.end();
 }
 
-GenTexture::GenTexture() {}
+void GenTexture::addShader(GenTextureShader *shader) {
+    sequence.push_back(shader);
+}
+
+GenTexture::~GenTexture() {}
 
 ofTexture& GenTexture::getTexture() {
     return fbo.getTextureReference();
@@ -35,14 +43,20 @@ GenTextureFragShader::GenTextureFragShader(const std::string &fn): filename(fn) 
 }
 
 void GenTextureFragShader::setup() {
-    if(!shader.load(ofDataPath("shaders/simple.vert"), ofDataPath("shaders/"+filename))) {
-        std::cerr << "error loading shader " << filename << std::endl;
+    if(!shader.load(ofToDataPath("shaders/simple.vert"), ofToDataPath("shaders/"+filename))) {
+        ofLog(OF_LOG_ERROR, "error loading shader %s", filename.c_str());
     }
     if(!shader.linkProgram()) {
-        std::cerr << "error linking shader with " << filename << std::endl;
+        ofLog(OF_LOG_ERROR, "error linking shader with %s", filename.c_str());
     };
+    // shader uniforms from ShaderToy
+    shader.setUniform3f("iResolution", 512, 512, 0);
 }
 void GenTextureFragShader::apply() {
+    shader.setUniform1f("iGlobalTime", ofGetElapsedTimef());
+    shader.setUniform2f("iMouse", 256, 256);
+    shader.setUniform4f("iChannelTime", 0, 0, 0, 0);
+    shader.setUniform4f("iDate", 0, 0, 0, 0);
     shader.begin();
     ofRect(0, 0, 1, 1);
     shader.end();
