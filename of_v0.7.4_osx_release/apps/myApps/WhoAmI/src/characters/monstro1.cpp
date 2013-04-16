@@ -2,7 +2,7 @@
 
 monstro1::monstro1()
 {
-    GenTextureFragShader *fs = new GenTextureFragShader("triforce.frag");
+    GenTextureFragShader *fs = new GenTextureFragShader("tissue.frag");
     fs->setup();
     texture.addShader(fs);
     

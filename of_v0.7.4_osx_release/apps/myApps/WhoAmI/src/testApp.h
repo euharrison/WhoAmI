@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "monstro1.h"
+#include "genTexture.h"
 
 class testApp : public ofBaseApp{
 
@@ -22,8 +23,12 @@ class testApp : public ofBaseApp{
 	
     
 	ofLight light;
+    ofCamera camera;
     ofVec3f cameraPosition;
     
+    GenTexture tex;
+    ofMesh mesh;
+    ofVbo vbo;
     monstro1 m1;
 
 

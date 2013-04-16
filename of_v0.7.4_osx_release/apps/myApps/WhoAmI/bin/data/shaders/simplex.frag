@@ -2,10 +2,7 @@ uniform vec3      iResolution;     // viewport resolution (in pixels)
 uniform float     iGlobalTime;     // shader playback time (in seconds)
 uniform float     iChannelTime[4]; // channel playback time (in seconds)
 uniform vec4      iMouse;          // mouse pixel coords. xy: current (if MLB down), zw: click
-uniform sampler2D iChannel0;
-uniform sampler2D iChannel1;
-uniform sampler2D iChannel2;
-uniform sampler2D iChannel3;     // input channel. XX = 2D/Cube
+uniform samplerXX iChannel0..3;    // input channel. XX = 2D/Cube
 uniform vec4      iDate;           // (year, month, day, time in seconds)
 
 #define  NORMALIZE_GRADIENTS

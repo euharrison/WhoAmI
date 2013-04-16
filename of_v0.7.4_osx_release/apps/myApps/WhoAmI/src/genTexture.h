@@ -14,6 +14,8 @@
 #include <string>
 
 class GenTextureShader {
+protected:
+    ofVbo vbo;
 public:
     virtual void setup() {};
     virtual ~GenTextureShader() {}
@@ -43,6 +45,13 @@ public:
     virtual void apply();
 };
 
+
+class GenTextureImageShader: public GenTextureShader {
+    ofImage &img;
+public:
+    explicit GenTextureImageShader(ofImage &image);
+    virtual void apply();
+};
 
 
 
