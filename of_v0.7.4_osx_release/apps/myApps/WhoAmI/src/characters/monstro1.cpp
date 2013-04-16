@@ -21,3 +21,10 @@ void monstro1::update()
     
     shapes[HEAD]->rotation.y += 1;
 }
+
+void monstro1::reshape() {
+    for (int i = 0; i < MAX_RESHAPES; i++) {
+        float x = ofRandom(5.0)+1.0;
+        shapes[(size_t)ofRandom(TOTAL_SHAPES)]->updateMesh(x, ofRandom(10.0)+5.0, x);
+    }
+}
