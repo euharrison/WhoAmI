@@ -3,11 +3,11 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	
-	camWidth 		= 320;	// try to grab at this size. 
-	camHeight 		= 240;
+	camWidth 		= 640;	// try to grab at this size.
+	camHeight 		= 480;
 	
 	vidGrabber.setVerbose(true);
-	vidGrabber.setDeviceID(1);
+	vidGrabber.setDeviceID(0);
 	vidGrabber.setDesiredFrameRate(60);
 	vidGrabber.initGrabber(camWidth,camHeight);
 	

@@ -24,6 +24,9 @@ class testApp : public ofBaseApp{
 	ofLight light;
     ofVec3f cameraPosition;
     
+    ofVideoGrabber vidgrabber;
+    ofShader videoshader;
+    
     monstro1 m1;
 
 

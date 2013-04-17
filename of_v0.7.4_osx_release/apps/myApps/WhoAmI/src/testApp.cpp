@@ -19,13 +19,23 @@ void testApp::setup()
     light.setDiffuseColor(ofColor(255,255,255));
     light.setSpecularColor(ofColor(255,255,255));
     light.setPosition(200, 200, 200);
-    light.enable();    
+    light.enable();
     
+    vidgrabber.setVerbose(true);
+    vidgrabber.setDeviceID(0);
+    vidgrabber.setDesiredFrameRate(60);
+    vidgrabber.setPixelFormat(OF_PIXELS_BGRA);
+    vidgrabber.initGrabber(640, 480);
+    
+    videoshader.load(ofToDataPath("shaders/vid.vert"), ofToDataPath("shaders/vid.frag"));
+    videoshader.linkProgram();
+    videoshader.setUniform3f("iResolution", ofGetWidth()/640.0, ofGetHeight()/480.0, 0);
 }
 
 //--------------------------------------------------------------
 void testApp::update()
 {
+    vidgrabber.update();
     m1.update();
 }
 
@@ -37,9 +47,11 @@ void testApp::draw(){
     ofPushMatrix();
     ofTranslate(cameraPosition.x, cameraPosition.y, cameraPosition.z);
     
-    
+    videoshader.begin();
+    vidgrabber.getTextureReference().bind();
     m1.draw();
-    
+    vidgrabber.getTextureReference().unbind();
+    videoshader.end();
     
     ofPopMatrix();
     ofDisableLighting();
