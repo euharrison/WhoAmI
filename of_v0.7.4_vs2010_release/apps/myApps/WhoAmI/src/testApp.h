@@ -3,6 +3,7 @@
 #include "ofxKinectNui.h"
 #include "ofMain.h"
 #include "monstro1.h"
+#include "monstro2.h"
 
 #define USE_KINECT
 
@@ -25,9 +26,11 @@ class testApp : public ofBaseApp{
 	
     
 	ofLight light;
-    ofVec3f cameraPosition;
     
-    monstro1 m1;
+	vector<characterBase*> characteres;
+	int current;
+
+	int numFramesFoundSkeleton;
 	
 
 	//Kinect
@@ -44,6 +47,4 @@ class testApp : public ofBaseApp{
 	unsigned short farClipping;
 	int angle;
 	
-	//integration kinect
-	int currentSkeletonIndex;
 };

@@ -12,13 +12,20 @@ void testApp::setup(){
     
     ofSetSphereResolution(64);
     
-    cameraPosition.set(ofGetWidth()/2, ofGetHeight()/2+40, 500);
-    
     
     light.setDiffuseColor(ofColor(255,255,255));
     light.setSpecularColor(ofColor(255,255,255));
     light.setPosition(200, 200, 200);
     light.enable();   
+
+
+	characteres.push_back(new monstro1());
+	characteres.push_back(new monstro2());
+	characteres.push_back(new monstro1());
+	characteres.push_back(new monstro2());
+
+	current = 0;
+	numFramesFoundSkeleton = 0;
 
 
 #ifdef USE_KINECT
@@ -41,7 +48,6 @@ void testApp::setup(){
 	bPlugged = kinect.isConnected();
 	nearClipping = kinect.getNearClippingDistance();
 	farClipping = kinect.getFarClippingDistance();
-	currentSkeletonIndex = -1;
 #endif	
     
 }
@@ -54,19 +60,34 @@ void testApp::update(){
 	kinectSource->update();
 
 	// Update kinect coords
+	bool founded = false;
 	for(int i = 0; i < kinect::nui::SkeletonFrame::SKELETON_COUNT; ++i){
 		for(int j = 0; j < kinect::nui::SkeletonData::POSITION_COUNT; ++j){
-			if(kinect.skeletonPoints[i][0].z > 0){
-				currentSkeletonIndex = i;
-				m1.shapes[j]->position.x = ofMap(kinect.skeletonPoints[i][j].x, 0, 310, 0, ofGetWidth());
-				m1.shapes[j]->position.y = kinect.skeletonPoints[i][j].y * 3;
-				m1.shapes[j]->position.z = ofMap(kinect.skeletonPoints[i][j].z, 0, 40000, 0, -2000);
+			if(kinect.skeletonPoints[i][0].z > 0)
+			{
+				if(numFramesFoundSkeleton==0){
+					current = ofRandom(0, characteres.size()-1);
+				}
+				if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
+				founded = true;
+
+				characteres[current]->shapes[j]->position.x = ofMap(kinect.skeletonPoints[i][j].x, 0, 320, -500, 500);
+				characteres[current]->shapes[j]->position.y = ofMap(kinect.skeletonPoints[i][j].y, 0, 240, -300, 300);
+				characteres[current]->shapes[j]->position.z = ofMap(kinect.skeletonPoints[i][j].z, 500, 4000, -5, -15);
 			}
+		}
+	}
+	
+	if(!founded && numFramesFoundSkeleton>0){
+		numFramesFoundSkeleton--;
+
+		if(numFramesFoundSkeleton==0){
+			//saiu
 		}
 	}
 #endif	
 
-	m1.update();
+	characteres[current]->update();
 
 }
 
@@ -76,11 +97,9 @@ void testApp::draw(){
     ofEnableLighting();
     
     ofPushMatrix();
-    ofTranslate(cameraPosition.x, cameraPosition.y, cameraPosition.z);
+	ofTranslate(ofGetWidth()/2, ofGetWidth()/2, 0);
     
-    
-    m1.draw();
-    
+	characteres[current]->draw();
     
     ofPopMatrix();
     ofDisableLighting();

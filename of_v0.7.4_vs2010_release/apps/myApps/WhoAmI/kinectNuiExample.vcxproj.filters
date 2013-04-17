@@ -54,6 +54,9 @@
     <ClCompile Include="src\shapes\shapeBase.cpp">
       <Filter>shapes</Filter>
     </ClCompile>
+    <ClCompile Include="src\characters\monstro2.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -128,6 +131,9 @@
     </ClInclude>
     <ClInclude Include="src\shapes\shapeBase.h">
       <Filter>shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\characters\monstro2.h">
+      <Filter>characters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

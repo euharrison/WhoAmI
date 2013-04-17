@@ -21,6 +21,11 @@
 .LSOverride
 Icon
 
+*/obj/*
+*/ipch/*
+*.opensdf
+
+
 # Thumbnails
 ._*
 
