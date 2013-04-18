@@ -2,8 +2,8 @@
 
 #include "ofxKinectNui.h"
 #include "ofMain.h"
-#include "characterBase.h"
-#include "block.h"
+#include "characters\characterBase.h"
+#include "shapes\block.h"
 
 class monstro1 : public characterBase
 {

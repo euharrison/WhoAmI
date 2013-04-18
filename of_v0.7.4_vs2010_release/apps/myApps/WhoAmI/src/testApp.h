@@ -2,8 +2,9 @@
 
 #include "ofxKinectNui.h"
 #include "ofMain.h"
-#include "monstro1.h"
-#include "monstro2.h"
+#include "ofxXmlSettings.h"
+#include "characters\monstro1.h"
+#include "characters\monstro2.h"
 
 #define USE_KINECT
 
@@ -31,6 +32,7 @@ class testApp : public ofBaseApp{
 	int current;
 
 	int numFramesFoundSkeleton;
+	ofPoint skeletonFake[20];
 	
 
 	//Kinect

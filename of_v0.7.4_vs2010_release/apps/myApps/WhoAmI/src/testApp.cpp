@@ -26,9 +26,30 @@ void testApp::setup(){
 
 	current = 0;
 	numFramesFoundSkeleton = 0;
+	
+
+	skeletonFake[0] = ofPoint(183, 83, 27000);
+	skeletonFake[1] = ofPoint(182, 78, 27536);
+	skeletonFake[2] = ofPoint(182, 44, 27760);
+	skeletonFake[3] = ofPoint(182, 27, 27752);
+	skeletonFake[4] = ofPoint(167, 54, 27624);
+	skeletonFake[5] = ofPoint(151, 72, 27448);
+	skeletonFake[6] = ofPoint(144, 91, 26296);
+	skeletonFake[7] = ofPoint(142, 99, 26080);
+	skeletonFake[8] = ofPoint(196, 54, 27784);
+	skeletonFake[9] = ofPoint(213, 72, 28136);
+	skeletonFake[10] = ofPoint(225, 89, 27160);
+	skeletonFake[11] = ofPoint(229, 97, 26824);
+	skeletonFake[12] = ofPoint(176, 90, 26792);
+	skeletonFake[13] = ofPoint(176, 142, 27144);
+	skeletonFake[14] = ofPoint(178, 189, 26512);
+	skeletonFake[15] = ofPoint(180, 194, 25616);
+	skeletonFake[16] = ofPoint(190, 89, 26920);
+	skeletonFake[17] = ofPoint(198, 136, 27136);
+	skeletonFake[18] = ofPoint(203, 168, 27304);
+	skeletonFake[19] = ofPoint(205, 176, 26872);
 
 
-#ifdef USE_KINECT
 	ofxKinectNui::InitSetting initSetting;
 	initSetting.grabVideo = false;
 	initSetting.grabDepth = false;
@@ -48,17 +69,20 @@ void testApp::setup(){
 	bPlugged = kinect.isConnected();
 	nearClipping = kinect.getNearClippingDistance();
 	farClipping = kinect.getFarClippingDistance();
-#endif	
     
+	for(int i = 0; i < 20; i++) {
+		characteres[current]->shapes[i]->position.x = ofMap(skeletonFake[i].x, 0, 320, -500, 500);
+		characteres[current]->shapes[i]->position.y = ofMap(skeletonFake[i].y, 0, 240, -300, 300);
+		characteres[current]->shapes[i]->position.z = ofMap(skeletonFake[i].z, 500, 4000, -5, -15);
+	}
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
-	
-#ifdef USE_KINECT
+void testApp::update()
+{
 	//kinect
 	kinectSource->update();
-
+	
 	// Update kinect coords
 	bool founded = false;
 	for(int i = 0; i < kinect::nui::SkeletonFrame::SKELETON_COUNT; ++i){
@@ -70,7 +94,7 @@ void testApp::update(){
 				}
 				if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
 				founded = true;
-
+				
 				characteres[current]->shapes[j]->position.x = ofMap(kinect.skeletonPoints[i][j].x, 0, 320, -500, 500);
 				characteres[current]->shapes[j]->position.y = ofMap(kinect.skeletonPoints[i][j].y, 0, 240, -300, 300);
 				characteres[current]->shapes[j]->position.z = ofMap(kinect.skeletonPoints[i][j].z, 500, 4000, -5, -15);
@@ -78,14 +102,13 @@ void testApp::update(){
 		}
 	}
 	
-	if(!founded && numFramesFoundSkeleton>0){
+	if(!founded && numFramesFoundSkeleton>0)
+	{
 		numFramesFoundSkeleton--;
-
-		if(numFramesFoundSkeleton==0){
+		if (numFramesFoundSkeleton==0) {
 			//saiu
 		}
-	}
-#endif	
+	}	
 
 	characteres[current]->update();
 
@@ -107,7 +130,7 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+	
 }
 
 //--------------------------------------------------------------

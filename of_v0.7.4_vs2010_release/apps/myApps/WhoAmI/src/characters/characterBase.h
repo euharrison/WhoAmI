@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "shapeBase.h"
+#include "shapes\shapeBase.h"
 
 
 #define HEAD            0
