@@ -1,5 +1,6 @@
 #include "shapeBase.h"
 
+
 void shapeBase::beginDraw()
 {
     ofPushMatrix();

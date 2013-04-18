@@ -1,8 +1,13 @@
 #include "block.h"
 
+block::block()
+{
+
+}
 
 void block::updateMesh(float width, float height, float depth)
 {
+	
     
     //TODO implementar a manipulacao do material
     material.setEmissiveColor(ofColor(255,0,0));

@@ -69,6 +69,7 @@
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
       <Filter>addons\ofxXmlSettings</Filter>
     </ClCompile>
+    <ClCompile Include="src\genTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -285,6 +286,7 @@
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
       <Filter>addons\ofxXmlSettings</Filter>
     </ClInclude>
+    <ClInclude Include="src\genTexture.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="addons">

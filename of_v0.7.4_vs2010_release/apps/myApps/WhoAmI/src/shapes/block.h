@@ -7,7 +7,9 @@ class block : public shapeBase
 {
     
 public:
-    
+
+    block();
+
     void updateMesh(float width, float height, float depth);
     void draw();
     
