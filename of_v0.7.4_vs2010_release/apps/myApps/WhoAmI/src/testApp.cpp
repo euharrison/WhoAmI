@@ -46,7 +46,7 @@ void testApp::setup(){
 	characteres.push_back(new monstro1());
 	characteres.push_back(new monstro2());
 
-	current = 0;
+	current = 1;
 	numFramesFoundSkeleton = 0;
 	
 

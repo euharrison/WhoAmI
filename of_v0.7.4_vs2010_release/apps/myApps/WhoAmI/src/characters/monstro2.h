@@ -3,7 +3,7 @@
 #include "ofxKinectNui.h"
 #include "ofMain.h"
 #include "characters\characterBase.h"
-#include "shapes\block.h"
+#include "shapes\sphere.h"
 
 class monstro2 : public characterBase
 {
