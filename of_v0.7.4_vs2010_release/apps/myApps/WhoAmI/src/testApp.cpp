@@ -18,15 +18,15 @@ void testApp::setup(){
     light.setPosition(200, 200, 200);
     light.enable();
     
-    vidgrabber.setVerbose(true);
-    vidgrabber.setDeviceID(0);
-    vidgrabber.setDesiredFrameRate(60);
-    vidgrabber.setPixelFormat(OF_PIXELS_BGRA);
-    vidgrabber.initGrabber(640, 480);
+    //vidgrabber.setVerbose(true);
+    //vidgrabber.setDeviceID(0);
+    //vidgrabber.setDesiredFrameRate(60);
+    //vidgrabber.setPixelFormat(OF_PIXELS_BGRA);
+    //vidgrabber.initGrabber(640, 480);
     
-    videoshader.load(ofToDataPath("shaders/vid.vert"), ofToDataPath("shaders/vid.frag"));
-    videoshader.linkProgram();
-    videoshader.setUniform3f("iResolution", ofGetWidth()/640.0, ofGetHeight()/480.0, 0);
+    //videoshader.load(ofToDataPath("shaders/vid.vert"), ofToDataPath("shaders/vid.frag"));
+    //videoshader.linkProgram();
+    //videoshader.setUniform3f("iResolution", ofGetWidth()/640.0, ofGetHeight()/480.0, 0);
 
 
 	characteres.push_back(new monstro1());
@@ -134,13 +134,13 @@ void testApp::draw(){
     ofPushMatrix();
 	ofTranslate(ofGetWidth()/2, ofGetWidth()/2, 0);
     
-	videoshader.begin();
-    vidgrabber.getTextureReference().bind();
+	//videoshader.begin();
+    //vidgrabber.getTextureReference().bind();
     
 	characteres[current]->draw();
     
-	vidgrabber.getTextureReference().unbind();
-    videoshader.end();
+	//vidgrabber.getTextureReference().unbind();
+    //videoshader.end();
 
     ofPopMatrix();
     ofDisableLighting();
