@@ -41,12 +41,12 @@ void testApp::setup(){
     //videoshader.setUniform3f("iResolution", ofGetWidth()/640.0, ofGetHeight()/480.0, 0);
 
 
-	characteres.push_back(new monstro1());
-	characteres.push_back(new monstro2());
-	characteres.push_back(new monstro1());
-	characteres.push_back(new monstro2());
+	//characteres.push_back(new monstro1());
+	//characteres.push_back(new monstro2());
+	//characteres.push_back(new monstro1());
+	characteres.push_back(new stickman());
 
-	current = 1;
+	current = 0;
 	numFramesFoundSkeleton = 0;
 	
 

@@ -5,6 +5,7 @@
 #include "ofxXmlSettings.h"
 #include "characters\monstro1.h"
 #include "characters\monstro2.h"
+#include "characters\stickman.h"
 
 #define USE_KINECT
 
@@ -37,7 +38,7 @@ class testApp : public ofBaseApp{
     
     ofVideoGrabber vidgrabber;
     ofShader videoshader;
-	
+
 
 	//Kinect
 	void kinectPlugged();

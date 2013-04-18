@@ -73,6 +73,9 @@
     <ClCompile Include="src\shapes\sphere.cpp">
       <Filter>shapes</Filter>
     </ClCompile>
+    <ClCompile Include="src\characters\stickman.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -151,138 +154,6 @@
     <ClInclude Include="src\characters\monstro2.h">
       <Filter>characters</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DGraph.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUI2DPad.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIBaseDraws.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIBiLabelSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIButton.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICanvas.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICircleSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUICustomImageButton.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIDropDownList.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIEventArgs.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIFPS.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIFPSSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImage.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageButton.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageSampler.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIImageToggle.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabel.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabelButton.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUILabelToggle.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMinimalSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMovingGraph.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageButton.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIMultiImageToggle.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUINumberDialer.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRadio.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRangeSlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRectangle.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIRotarySlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIScrollableCanvas.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISlider.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISpacer.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISpectrum.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUISuperCanvas.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITextArea.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUITextInput.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIToggle.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIToggleMatrix.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIValuePlotter.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWaveform.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWidget.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\addons\ofxUI\src\ofxUIWidgetWithLabel.h">
-      <Filter>addons\ofxUI</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h">
       <Filter>addons\ofxXmlSettings</Filter>
     </ClInclude>
@@ -292,6 +163,9 @@
     <ClInclude Include="src\genTexture.h" />
     <ClInclude Include="src\shapes\sphere.h">
       <Filter>shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\characters\stickman.h">
+      <Filter>characters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -306,9 +180,6 @@
     </Filter>
     <Filter Include="shapes">
       <UniqueIdentifier>{2eee4f1f-bd65-444c-95ae-de7420bd9dce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="addons\ofxUI">
-      <UniqueIdentifier>{18da0c83-9fb7-4746-bb10-39644e2063be}</UniqueIdentifier>
     </Filter>
     <Filter Include="addons\ofxXmlSettings">
       <UniqueIdentifier>{6c962486-fb9f-4369-ab7b-d40875c4ab07}</UniqueIdentifier>
