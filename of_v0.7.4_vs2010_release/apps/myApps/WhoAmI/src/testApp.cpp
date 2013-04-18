@@ -16,7 +16,17 @@ void testApp::setup(){
     light.setDiffuseColor(ofColor(255,255,255));
     light.setSpecularColor(ofColor(255,255,255));
     light.setPosition(200, 200, 200);
-    light.enable();   
+    light.enable();
+    
+    vidgrabber.setVerbose(true);
+    vidgrabber.setDeviceID(0);
+    vidgrabber.setDesiredFrameRate(60);
+    vidgrabber.setPixelFormat(OF_PIXELS_BGRA);
+    vidgrabber.initGrabber(640, 480);
+    
+    videoshader.load(ofToDataPath("shaders/vid.vert"), ofToDataPath("shaders/vid.frag"));
+    videoshader.linkProgram();
+    videoshader.setUniform3f("iResolution", ofGetWidth()/640.0, ofGetHeight()/480.0, 0);
 
 
 	characteres.push_back(new monstro1());
@@ -48,6 +58,12 @@ void testApp::setup(){
 	skeletonFake[17] = ofPoint(198, 136, 27136);
 	skeletonFake[18] = ofPoint(203, 168, 27304);
 	skeletonFake[19] = ofPoint(205, 176, 26872);
+    
+	for(int i = 0; i < 20; i++) {
+		characteres[current]->shapes[i]->position.x = ofMap(skeletonFake[i].x, 0, 320, -500, 500);
+		characteres[current]->shapes[i]->position.y = ofMap(skeletonFake[i].y, 0, 240, -300, 300);
+		characteres[current]->shapes[i]->position.z = ofMap(skeletonFake[i].z, 500, 4000, -5, -15);
+	}
 
 
 	ofxKinectNui::InitSetting initSetting;
@@ -69,17 +85,13 @@ void testApp::setup(){
 	bPlugged = kinect.isConnected();
 	nearClipping = kinect.getNearClippingDistance();
 	farClipping = kinect.getFarClippingDistance();
-    
-	for(int i = 0; i < 20; i++) {
-		characteres[current]->shapes[i]->position.x = ofMap(skeletonFake[i].x, 0, 320, -500, 500);
-		characteres[current]->shapes[i]->position.y = ofMap(skeletonFake[i].y, 0, 240, -300, 300);
-		characteres[current]->shapes[i]->position.z = ofMap(skeletonFake[i].z, 500, 4000, -5, -15);
-	}
 }
 
 //--------------------------------------------------------------
 void testApp::update()
 {
+    vidgrabber.update();
+
 	//kinect
 	kinectSource->update();
 	
@@ -117,13 +129,19 @@ void testApp::update()
 //--------------------------------------------------------------
 void testApp::draw(){
     
-    ofEnableLighting();
+	ofEnableLighting();
     
     ofPushMatrix();
 	ofTranslate(ofGetWidth()/2, ofGetWidth()/2, 0);
     
+	videoshader.begin();
+    vidgrabber.getTextureReference().bind();
+    
 	characteres[current]->draw();
     
+	vidgrabber.getTextureReference().unbind();
+    videoshader.end();
+
     ofPopMatrix();
     ofDisableLighting();
 }

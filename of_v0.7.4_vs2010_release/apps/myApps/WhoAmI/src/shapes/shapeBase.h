@@ -22,6 +22,7 @@ protected:
     
     ofMaterial material;
     ofMesh mesh;
+    ofShader shader;
     
     
     void beginDraw();

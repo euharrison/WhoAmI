@@ -33,6 +33,9 @@ class testApp : public ofBaseApp{
 
 	int numFramesFoundSkeleton;
 	ofPoint skeletonFake[20];
+    
+    ofVideoGrabber vidgrabber;
+    ofShader videoshader;
 	
 
 	//Kinect

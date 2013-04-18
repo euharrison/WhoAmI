@@ -13,5 +13,12 @@ void monstro1::update()
     characterBase::update();
     
     shapes[ARM_LEFT]->rotation.y += 2;
-    
+}
+
+void monstro1::reshape() 
+{
+    for (int i = 0; i < MAX_RESHAPES; i++) {
+        float x = ofRandom(5.0)+1.0;
+        shapes[(size_t)ofRandom(20)]->updateMesh(x, ofRandom(10.0)+5.0, x);
+    }
 }
