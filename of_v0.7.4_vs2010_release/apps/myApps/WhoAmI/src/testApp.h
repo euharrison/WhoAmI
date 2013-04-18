@@ -27,6 +27,7 @@ class testApp : public ofBaseApp{
 	
     
 	ofLight light;
+	ofLight spotLight;
     
 	vector<characterBase*> characteres;
 	int current;

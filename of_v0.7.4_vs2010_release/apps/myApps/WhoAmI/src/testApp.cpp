@@ -15,10 +15,20 @@ void testApp::setup(){
     ofSetSphereResolution(64);
     
     
-    light.setDiffuseColor(ofColor(255,255,255));
-    light.setSpecularColor(ofColor(255,255,255));
-    light.setPosition(200, 200, 1000);
+    light.setDiffuseColor(ofColor(50,50,50));
+    light.setSpecularColor(ofColor(50,50,50));
+    light.setPosition(0, 300, 1000);
     light.enable();
+    
+    spotLight.setDiffuseColor(ofColor(255,255,255));
+    spotLight.setSpecularColor(ofColor(255,255,255));
+    spotLight.setPosition(0, 0, 1000);
+    spotLight.enable();
+	spotLight.setSpotlight();
+    spotLight.setSpotlightCutOff( 1000 );
+    spotLight.setSpotConcentration( 45 );
+
+
     
     //vidgrabber.setVerbose(true);
     //vidgrabber.setDeviceID(0);
@@ -114,9 +124,14 @@ void testApp::update()
 		if (numFramesFoundSkeleton==0) {
 			//saiu
 		}
-	}	
+	}
 
 	characteres[current]->update();
+	
+	spotLight.setPosition(
+		characteres[current]->shapes[NUI_SKELETON_POSITION_HEAD]->position.x + 200,
+		200,
+		2000);
 
 }
 

@@ -70,6 +70,9 @@
       <Filter>addons\ofxXmlSettings</Filter>
     </ClCompile>
     <ClCompile Include="src\genTexture.cpp" />
+    <ClCompile Include="src\shapes\sphere.cpp">
+      <Filter>shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -287,6 +290,9 @@
       <Filter>addons\ofxXmlSettings</Filter>
     </ClInclude>
     <ClInclude Include="src\genTexture.h" />
+    <ClInclude Include="src\shapes\sphere.h">
+      <Filter>shapes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="addons">

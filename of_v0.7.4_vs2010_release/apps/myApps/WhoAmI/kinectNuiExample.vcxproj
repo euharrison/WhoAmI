@@ -245,6 +245,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\shapes\block.cpp" />
     <ClCompile Include="src\shapes\shapeBase.cpp" />
+    <ClCompile Include="src\shapes\sphere.cpp" />
     <ClCompile Include="src\testApp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -320,6 +321,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="src\genTexture.h" />
     <ClInclude Include="src\shapes\block.h" />
     <ClInclude Include="src\shapes\shapeBase.h" />
+    <ClInclude Include="src\shapes\sphere.h" />
     <ClInclude Include="src\testApp.h" />
   </ItemGroup>
   <ItemGroup>
