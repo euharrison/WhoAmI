@@ -10,8 +10,7 @@ monstro2::monstro2()
 
 void monstro2::update()
 {
-    characterBase::update();
-    
-    shapes[HEAD]->rotation.y += 2;
+cout<< 111<<endl;
+shapes[0]->rotation.y += 2;
     
 }

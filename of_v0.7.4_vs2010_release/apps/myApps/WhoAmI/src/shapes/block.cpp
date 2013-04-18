@@ -7,15 +7,6 @@ block::block()
 
 void block::updateMesh(float width, float height, float depth)
 {
-	
-    
-    //TODO implementar a manipulacao do material
-    material.setEmissiveColor(ofColor(255,0,0));
-    material.setSpecularColor(ofColor(255,0,0));
-    material.setShininess(60);
-    
-    
-    
 	mesh.clear();
     
     ofVec3f vertices[] = {
@@ -67,6 +58,13 @@ void block::updateMesh(float width, float height, float depth)
 
 }
 
+void block::updateMaterial(int r, int g, int b)
+{
+	//TODO desenvolver
+    material.setEmissiveColor(ofColor(r,g,b));
+    material.setSpecularColor(ofColor(255,255,255));
+    material.setShininess(60);   
+}
 
 void block::draw()
 {

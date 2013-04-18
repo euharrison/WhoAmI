@@ -3,12 +3,7 @@
 #include "ofMain.h"
 #include "shapes\shapeBase.h"
 
-
-#define HEAD            0
-#define ARM_LEFT        1
-#define FOREARM_LEFT    2
-#define HAND_LEFT       3
-
+#define UMBIGO 0
 
 class characterBase
 {
@@ -16,11 +11,11 @@ class characterBase
 public:
     
     ofPoint position;
-    
     shapeBase * shapes[20];
-    
-    void update();
+
+	virtual void update(){};
+
+	void updateSkeleton(ofPoint skeletonPoints[20]);
     void draw();
-    
     
 };

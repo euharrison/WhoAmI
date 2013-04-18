@@ -11,6 +11,7 @@ public:
     ofPoint rotation;
     
 	virtual void updateMesh(float width, float height, float depth) {};
+	virtual void updateMaterial(int r, int g, int b) {};
 	virtual void draw() {};
     
     

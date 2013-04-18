@@ -8,6 +8,8 @@ void testApp::setup(){
 	ofBackground(10, 10, 10);
 	glEnable(GL_DEPTH_TEST);
     
+	ofEnableLighting();
+
     ofSetSmoothLighting(true);
     
     ofSetSphereResolution(64);
@@ -15,7 +17,7 @@ void testApp::setup(){
     
     light.setDiffuseColor(ofColor(255,255,255));
     light.setSpecularColor(ofColor(255,255,255));
-    light.setPosition(200, 200, 200);
+    light.setPosition(200, 200, 1000);
     light.enable();
     
     //vidgrabber.setVerbose(true);
@@ -59,11 +61,7 @@ void testApp::setup(){
 	skeletonFake[18] = ofPoint(203, 168, 27304);
 	skeletonFake[19] = ofPoint(205, 176, 26872);
     
-	for(int i = 0; i < 20; i++) {
-		characteres[current]->shapes[i]->position.x = ofMap(skeletonFake[i].x, 0, 320, -500, 500);
-		characteres[current]->shapes[i]->position.y = ofMap(skeletonFake[i].y, 0, 240, -300, 300);
-		characteres[current]->shapes[i]->position.z = ofMap(skeletonFake[i].z, 500, 4000, -5, -15);
-	}
+	characteres[current]->updateSkeleton( skeletonFake );
 
 
 	ofxKinectNui::InitSetting initSetting;
@@ -98,19 +96,15 @@ void testApp::update()
 	// Update kinect coords
 	bool founded = false;
 	for(int i = 0; i < kinect::nui::SkeletonFrame::SKELETON_COUNT; ++i){
-		for(int j = 0; j < kinect::nui::SkeletonData::POSITION_COUNT; ++j){
-			if(kinect.skeletonPoints[i][0].z > 0)
-			{
-				if(numFramesFoundSkeleton==0){
-					current = ofRandom(0, characteres.size()-1);
-				}
-				if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
-				founded = true;
-				
-				characteres[current]->shapes[j]->position.x = ofMap(kinect.skeletonPoints[i][j].x, 0, 320, -500, 500);
-				characteres[current]->shapes[j]->position.y = ofMap(kinect.skeletonPoints[i][j].y, 0, 240, -300, 300);
-				characteres[current]->shapes[j]->position.z = ofMap(kinect.skeletonPoints[i][j].z, 500, 4000, -5, -15);
+		if(kinect.skeletonPoints[i][0].z > 0)
+		{
+			if(numFramesFoundSkeleton==0){
+				current = ofRandom(0, characteres.size()-1);
 			}
+			if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
+			founded = true;
+			
+			characteres[current]->updateSkeleton( kinect.skeletonPoints[i] );
 		}
 	}
 	
@@ -129,8 +123,6 @@ void testApp::update()
 //--------------------------------------------------------------
 void testApp::draw(){
     
-	ofEnableLighting();
-    
     ofPushMatrix();
 	ofTranslate(ofGetWidth()/2, ofGetWidth()/2, 0);
     
@@ -143,7 +135,6 @@ void testApp::draw(){
     //videoshader.end();
 
     ofPopMatrix();
-    ofDisableLighting();
 }
 
 //--------------------------------------------------------------
