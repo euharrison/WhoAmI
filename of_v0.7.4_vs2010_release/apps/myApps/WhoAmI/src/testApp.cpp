@@ -41,9 +41,8 @@ void testApp::setup(){
     //videoshader.setUniform3f("iResolution", ofGetWidth()/640.0, ofGetHeight()/480.0, 0);
 
 
-	//characteres.push_back(new monstro1());
-	//characteres.push_back(new monstro2());
-	//characteres.push_back(new monstro1());
+	characteres.push_back(new monstro1());
+	characteres.push_back(new monstro2());
 	characteres.push_back(new stickman());
 
 	current = 0;
@@ -109,7 +108,10 @@ void testApp::update()
 		if(kinect.skeletonPoints[i][0].z > 0)
 		{
 			if(numFramesFoundSkeleton==0){
-				current = ofRandom(0, characteres.size()-1);
+				current = ofRandom(0, characteres.size());
+				if (current >= characteres.size()-1) {
+					current = characteres.size()-1;
+				}
 			}
 			if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
 			founded = true;
