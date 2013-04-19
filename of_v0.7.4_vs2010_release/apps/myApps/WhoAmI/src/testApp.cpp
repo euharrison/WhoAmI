@@ -112,7 +112,7 @@ void testApp::update()
 				if (current >= characteres.size()-1) {
 					current = characteres.size()-1;
 				}
-			}
+			} 
 			if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
 			founded = true;
 			
@@ -141,7 +141,7 @@ void testApp::update()
 void testApp::draw(){
     
     ofPushMatrix();
-	ofTranslate(ofGetWidth()/2, ofGetWidth()/2, 0);
+	ofTranslate(ofGetWidth()/2, ofGetHeight()/2, 0);
     
 	//videoshader.begin();
     //vidgrabber.getTextureReference().bind();
@@ -156,7 +156,9 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-	
+	if (key == 'f') {
+		ofToggleFullscreen();
+	}
 }
 
 //--------------------------------------------------------------
