@@ -43,10 +43,9 @@ void testApp::setup(){
 
 	characteres.push_back(new monstro1());
 	characteres.push_back(new monstro2());
-	characteres.push_back(new monstro1());
-	characteres.push_back(new monstro2());
+	characteres.push_back(new monstroRandom());
 
-	current = 0;
+	current = 2;
 	numFramesFoundSkeleton = 0;
 	
 

@@ -73,6 +73,12 @@
     <ClCompile Include="src\shapes\sphere.cpp">
       <Filter>shapes</Filter>
     </ClCompile>
+    <ClCompile Include="src\characters\monstroRandom.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shapes\randomShape.cpp">
+      <Filter>shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\testApp.h" />
@@ -291,6 +297,12 @@
     </ClInclude>
     <ClInclude Include="src\genTexture.h" />
     <ClInclude Include="src\shapes\sphere.h">
+      <Filter>shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\characters\monstroRandom.h">
+      <Filter>characters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shapes\randomShape.h">
       <Filter>shapes</Filter>
     </ClInclude>
   </ItemGroup>

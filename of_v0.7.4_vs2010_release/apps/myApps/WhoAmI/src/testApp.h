@@ -5,6 +5,7 @@
 #include "ofxXmlSettings.h"
 #include "characters\monstro1.h"
 #include "characters\monstro2.h"
+#include "characters\monstroRandom.h"
 
 #define USE_KINECT
 
