@@ -26,6 +26,10 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 	
+
+		void changeCharacter();
+		float lastChange;
+
     
 	ofLight light;
 	ofLight spotLight;
@@ -53,5 +57,16 @@ class testApp : public ofBaseApp{
 	unsigned short nearClipping;
 	unsigned short farClipping;
 	int angle;
+
+	//kinect audio
+	void audioIn(float* input, int vbufferSize, int nChannels);
+	
+	vector<float> left;
+	vector<float> right;
+
+	float smoothedVol;
+	float scaledVol;
+
+	ofSoundStream soundStream;
 	
 };

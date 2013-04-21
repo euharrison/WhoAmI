@@ -48,6 +48,8 @@ void testApp::setup(){
 	current = 0;
 	numFramesFoundSkeleton = 0;
 	
+	lastChange = 0;
+	
 
 	skeletonFake[0] = ofPoint(183, 83, 27000);
 	skeletonFake[1] = ofPoint(182, 78, 27536);
@@ -73,10 +75,12 @@ void testApp::setup(){
 	characteres[current]->updateSkeleton( skeletonFake );
 
 
+	//kinect
+
 	ofxKinectNui::InitSetting initSetting;
 	initSetting.grabVideo = false;
 	initSetting.grabDepth = false;
-	initSetting.grabAudio = false;
+	initSetting.grabAudio = true;
 	initSetting.grabLabel = false;
 	initSetting.grabSkeleton = true;
 	initSetting.grabCalibratedVideo = false;
@@ -92,6 +96,18 @@ void testApp::setup(){
 	bPlugged = kinect.isConnected();
 	nearClipping = kinect.getNearClippingDistance();
 	farClipping = kinect.getFarClippingDistance();
+
+
+	//kinect audio
+
+	soundStream.listDevices();
+	int bufferSize = 256;
+	left.assign(bufferSize, 0.0);
+	right.assign(bufferSize, 0.0);
+	smoothedVol     = 0.0;
+	scaledVol		= 0.0;
+	soundStream.setup(this, 0, 2, 44100, bufferSize, 4);
+
 }
 
 //--------------------------------------------------------------
@@ -108,10 +124,7 @@ void testApp::update()
 		if(kinect.skeletonPoints[i][0].z > 0)
 		{
 			if(numFramesFoundSkeleton==0){
-				current = ofRandom(0, characteres.size());
-				if (current >= characteres.size()-1) {
-					current = characteres.size()-1;
-				}
+				changeCharacter();
 			} 
 			if(numFramesFoundSkeleton<5) numFramesFoundSkeleton = 5;
 			founded = true;
@@ -128,8 +141,18 @@ void testApp::update()
 		}
 	}
 
+
+	//audio
+	scaledVol = ofMap(smoothedVol, 0.0, 0.17, 0.0, 1.0, true);
+	if (scaledVol > 0.8) {
+		changeCharacter();
+	}
+
+	//characteres
 	characteres[current]->update();
 	
+
+	//light
 	spotLight.setPosition(
 		characteres[current]->shapes[NUI_SKELETON_POSITION_HEAD]->position.x + 200,
 		200,
@@ -209,4 +232,50 @@ void testApp::kinectPlugged(){
 //--------------------------------------------------------------
 void testApp::kinectUnplugged(){
 	bPlugged = false;
+}
+
+//--------------------------------------------------------------
+void testApp::audioIn(float * input, int bufferSize, int nChannels)
+{	
+	float curVol = 0.0;
+
+	// samples are "interleaved"
+	int numCounted = 0;	
+
+	//lets go through each sample and calculate the root mean square which is a rough way to calculate volume	
+	for (int i = 0; i < bufferSize; i++){
+		left[i]		= input[i*2]*0.5;
+		right[i]	= input[i*2+1]*0.5;
+
+		curVol += left[i] * left[i];
+		curVol += right[i] * right[i];
+		numCounted+=2;
+	}
+
+	//this is how we get the mean of rms :) 
+	curVol /= (float)numCounted;
+
+	// this is how we get the root of rms :) 
+	curVol = sqrt( curVol );
+
+	smoothedVol *= 0.93;
+	smoothedVol += 0.07 * curVol;
+}
+
+//--------------------------------------------------------------
+void testApp::changeCharacter()
+{
+	float millis = ofGetElapsedTimeMillis();
+	if (millis-lastChange > 1000)
+	{
+		lastChange = millis;
+
+		int tempCur = current;
+		while (current == tempCur) {
+			current = ofRandom(0, characteres.size());
+			if (current >= characteres.size()-1) {
+				current = characteres.size()-1;
+			}
+		}
+	}
 }
